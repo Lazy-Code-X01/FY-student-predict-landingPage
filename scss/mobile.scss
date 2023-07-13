@@ -1,0 +1,131 @@
+
+// tablets and ipads potrait mode
+@media screen and (max-width: 1024px ) {
+    .initial {
+        .nav{
+            padding: 0 80px;
+        }
+        .row{
+            padding: 0 80px;
+            
+            .text-center{
+                h1{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 14px;
+                }
+                .btn{
+                    width: 150px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .second{
+        padding: 0px;
+    }
+
+    .third{
+        padding: 0px;
+    }
+
+    .fourth{
+        padding: 0px;
+    }
+}
+
+// low resolution tablets and ipads
+@media screen and (max-width: 782px) {
+    .initial{
+        // padding: 80px 0px;
+        .nav{
+            display: none;
+        }
+        .row{
+            padding: 0 50px;
+            flex-direction: column-reverse;
+            justify-content: unset;
+            .img-holder{
+                width: 50%;
+
+                img{
+                    width: 100%;
+                }
+            }
+            .text-center{
+                h1{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    
+    .mobile{
+        display: flex;
+        
+        .mobile-nav{
+            padding: 0 50px;
+        }
+    }
+
+    .second{
+        .container{
+            h2{
+                font-size: 30px;
+            }
+            .flex-box{
+                flex-direction: column;
+                gap: 20px;
+                .box{
+                    width: 100%;
+                    h3{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .third{
+        // .container{
+        // }
+        
+        .container{
+            flex-direction: column;
+            gap: 20px;
+
+            .text-contain{
+                width: 100%;
+            }
+            .img-contain{
+                width: 90%;
+            }
+        }
+        .mb-flex{
+            flex-direction: column-reverse;
+            gap: 20px;
+            .text-contain{
+                width: 100%;
+            }
+            .img-contain{
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .initial .row .text-center h1{
+        font-size: 27px;
+    }
+    .fourth{
+        .container{
+            height: 500px;
+        }
+    }
+}

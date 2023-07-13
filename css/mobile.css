@@ -1,0 +1,96 @@
+@media screen and (max-width: 1024px) {
+  .initial .nav {
+    padding: 0 80px;
+  }
+  .initial .row {
+    padding: 0 80px;
+  }
+  .initial .row .text-center h1 {
+    font-size: 35px;
+  }
+  .initial .row .text-center p {
+    font-size: 14px;
+  }
+  .initial .row .text-center .btn {
+    width: 150px;
+    font-size: 14px;
+  }
+  .second {
+    padding: 0px;
+  }
+  .third {
+    padding: 0px;
+  }
+  .fourth {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 782px) {
+  .initial .nav {
+    display: none;
+  }
+  .initial .row {
+    padding: 0 50px;
+    flex-direction: column-reverse;
+    justify-content: unset;
+  }
+  .initial .row .img-holder {
+    width: 50%;
+  }
+  .initial .row .img-holder img {
+    width: 100%;
+  }
+  .initial .row .text-center h1 {
+    font-size: 30px;
+  }
+  .mobile {
+    display: flex;
+  }
+  .mobile .mobile-nav {
+    padding: 0 50px;
+  }
+  .second .container h2 {
+    font-size: 30px;
+  }
+  .second .container .flex-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .second .container .flex-box .box {
+    width: 100%;
+  }
+  .second .container .flex-box .box h3 {
+    font-size: 20px;
+  }
+  .second .container .flex-box .box p {
+    font-size: 18px;
+  }
+  .third .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .third .container .text-contain {
+    width: 100%;
+  }
+  .third .container .img-contain {
+    width: 90%;
+  }
+  .third .mb-flex {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .third .mb-flex .text-contain {
+    width: 100%;
+  }
+  .third .mb-flex .img-contain {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .initial .row .text-center h1 {
+    font-size: 27px;
+  }
+  .fourth .container {
+    height: 500px;
+  }
+}
