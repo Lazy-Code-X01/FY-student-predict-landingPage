@@ -84,6 +84,51 @@
   transform: translate3d(0, -10px, 0) rotate(-45deg);
 }
 
+.scroll-to-top {
+  position: relative;
+}
+
+.btn-position {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+
+.btn-style {
+  background-color: #5D1725;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -91,12 +136,29 @@
   font-family: "Karla", sans-serif;
 }
 
-body {
-  background: linear-gradient(180deg, #FFF 43.23%, rgba(202, 137, 150, 0) 100%);
-}
-
 html {
   scroll-behavior: smooth;
+  scroll-padding: 3rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(212, 212, 212);
+  border-radius: 5px;
+}
+
+.container {
+  overflow: hidden;
 }
 
 .mobile {
@@ -220,7 +282,7 @@ html {
 }
 .initial .row .text-center h1 {
   font-size: 45px;
-  font-weight: 800;
+  font-weight: 1200;
   line-height: 1.3;
 }
 .initial .row .text-center p {

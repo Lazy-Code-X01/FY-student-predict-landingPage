@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./css/index.css">
     <!--linking mobile css styles-->
     <link rel="stylesheet" href="./css/mobile.css">
+        
+    <!--importing boxicons for icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -34,8 +39,8 @@
               <div class="nav__menu">
                 <ul>
                   <li class="listed-item"><a href="#home">Home</a></li>
+                  <li class="listed-item"><a href="#feature">Features</a></li>
                   <li class="listed-item"><a href="#review">Reviews</a></li>
-                  <li class="listed-item"><a href="#features">Features</a></li>
                 </ul>
               </div>
           </div>
@@ -45,7 +50,7 @@
       
 <!--mobile navigation ends here-->
 
-    <section class="initial">
+    <section class="initial" id="home">
         <nav class="nav">
             <div class="container">
                 <div class="logo">
@@ -74,7 +79,7 @@
     </section>
 
     <section class="second">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <div class="tag">
                 <p>Why UC</p>
                 <span class="icon">
@@ -84,7 +89,7 @@
                 </span>
             </div>
             <h2>Why Use <span>UC</span></h2>
-            <div class="flex-box">
+            <div class="flex-box" >
                 <div class="box">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -125,7 +130,7 @@
 
     <section class="third">
         <div class="container" id="feature">
-            <div class="img-contain">
+            <div class="img-contain" data-aos="fade-left" data-aos-duration="1000">
                 <img src="./images/fly-icon.png" alt="image loading..">
             </div>
             <div class="text-contain">
@@ -144,14 +149,14 @@
                     he system offers comprehensive progress tracking features, allowing students to monitor their academic growth over time. They can view visual representations of their performance, track improvements, and identify areas where they need to focus more attention. This feature provides valuable insights and motivates students to stay on track towards their educational goals.
                 </p>
             </div>
-            <div class="img-contain">
+            <div class="img-contain" data-aos="fade-right" data-aos-duration="1000">
                 <img src="./images/fly-icon.png" alt="image loading..">
             </div>
         </div>
     </section>
     
     <section class="fourth" id="review">
-        <div class="container">
+        <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
             <p class="desc">
                 “What i love about UC is how friendly the UI is, and it provides apealing feedback, easy navigation.
             </p>
@@ -179,6 +184,15 @@
         </p>
     </div>
 
+    <!--scroll to top button-->
+    <div className="scroll-to-top">
+        <span class="btn btn-position btn-style">
+            <i class='bx bx-chevrons-up'></i>
+        </span>
+    </div>
+  
+    <!-- ==== ANIMATE ON SCROLL JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>
